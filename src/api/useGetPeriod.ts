@@ -31,7 +31,7 @@ interface PeriodProps {
     rate: number;
 }
 
-async function getPeriod(base: string, quote: string, period: string): Promise<PeriodProps> {
+async function getPeriod(base: string, quote: string, period: string): Promise<PeriodProps[]> {
     const startDate = getStartDate(period)
     console.log(startDate)
     const response = await axios.get<any[]>(`https://api.frankfurter.dev/v2/rates?from=${startDate}&base=${base}&quotes=${quote}`, {
