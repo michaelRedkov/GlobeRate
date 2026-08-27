@@ -17,7 +17,7 @@ const PeriodSelector = memo(({ period, setPeriod }: { period: Period, setPeriod:
                 <button
                     key={p}
                     className={`btn
-                        ${period === p ? "text-primary bg-linear-to-t border-t-2 border-muted" : "border-t-2 border-card"}
+                        ${period === p ? "text-primary bg-linear-to-t from-border to-muted border-t-2 border-muted" : "border-t-2 border-card from-muted to-border text-muted-foreground"}
                         ${isDark ? ' bg-linear-to-t from-border to-muted border-t-2' : ''}
                         `}
                     onClick={() => setPeriod(p)}
@@ -25,7 +25,6 @@ const PeriodSelector = memo(({ period, setPeriod }: { period: Period, setPeriod:
                     {p}
                 </button>
             ))}
-            {isDark && 'dark'}
         </div>
     )
 })
@@ -57,7 +56,7 @@ const AreaChartComponent = () => {
 
     if (isLoading) {
         return (
-            <LoaderComp/>
+            <LoaderComp />
         )
     }
 

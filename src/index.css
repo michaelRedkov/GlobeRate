@@ -19,7 +19,8 @@
   }
 
   .btn {
-    @apply border-card shadow-sm rounded-4xl bg-linear-to-b font-mono text-muted-foreground hover:shadow-md from-muted to-border px-2 duration-200 mx-1
+    @apply shadow-sm rounded-4xl bg-linear-to-b font-mono cursor-pointer
+    hover:shadow-md px-2 duration-200 mx-1
   }
 }
 

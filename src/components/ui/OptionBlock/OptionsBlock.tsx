@@ -48,7 +48,7 @@ const OptionsBlock = ({ data = [], direction }: OptionsBlockProps) => {
                 placeholder="Search code..."
             />
 
-            <ul className="overflow-auto md:h-44 h-22 md:scrollbar-thin scrollbar-thumb-border inset-shadow-2xs scrollbar-none">
+            <ul className="overflow-auto md:h-44 h-22 md:scrollbar-auto scrollbar-thumb-border inset-shadow-2xs scrollbar-none">
                 {filteredData.map((val) => {
                     const itemCode = val.quote;
                     const isActive = currentCode === itemCode

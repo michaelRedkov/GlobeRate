@@ -51,7 +51,9 @@ const CurrencyExchange = () => {
                 <div className='flex h-full justify-center items-center '>
                     <button
                         onClick={handleSwap}
-                        className='flex justify-center btn  p-2 rounded-4xl w-full my-2'>
+                        className='flex justify-center btn bg-muted border border-border 
+                        hover:bg-primary hover:text-green-400 hover:border-green-700
+                        p-2 rounded-4xl w-full max-w-32 my-2'>
                         <ArrowRightLeft className=' rotate-90 sm:rotate-0' />
                     </button>
                 </div>
